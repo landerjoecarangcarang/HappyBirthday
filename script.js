@@ -189,7 +189,7 @@
       });
     }
     document.getElementById('wishText').textContent =
-      'My dear cousin ' + who + ', may your year be filled with laughter, love, and every wish come true. 🎂✨';
+      'My dear cousin ' + who + ', may your year be filled with laughter, love, and may your every wish come true. 🎂✨';
     wishEl.classList.add('show');
   }
 
