@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#2b0a3d" />
+  <title>Happy Birthday! 🎉</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background layers -->
+  <div class="bg-bokeh" aria-hidden="true"></div>
+  <canvas id="fx" class="fx-canvas" aria-hidden="true"></canvas>
+
+  <!-- Floating balloons -->
+  <div class="balloons" aria-hidden="true">
+    <span class="balloon b1">🎈</span>
+    <span class="balloon b2">🎈</span>
+    <span class="balloon b3">🎈</span>
+    <span class="balloon b4">🎈</span>
+    <span class="balloon b5">🎈</span>
+    <span class="balloon b6">🎈</span>
+  </div>
+
+  <main class="stage">
+    <header class="hero">
+      <p class="eyebrow">A little celebration · just for you</p>
+      <h1 class="title">
+        <span class="title-line">Happy</span>
+        <span class="title-line title-accent">Birthday</span>
+      </h1>
+      <div class="name-field">
+        <label for="nameInput">Whose birthday is it?</label>
+        <input id="nameInput" type="text" placeholder="Type a name…" maxlength="24" autocomplete="off" />
+      </div>
+      <p class="greeting" id="greeting">Today is all about you. Make a wish! 🎂</p>
+    </header>
+
+    <!-- Cake -->
+    <section class="cake-wrap" aria-label="Birthday cake">
+      <div class="cake" id="cake">
+        <div class="candles">
+          <div class="candle" data-i="0"><span class="flame"></span></div>
+          <div class="candle" data-i="1"><span class="flame"></span></div>
+          <div class="candle" data-i="2"><span class="flame"></span></div>
+          <div class="candle" data-i="3"><span class="flame"></span></div>
+          <div class="candle" data-i="4"><span class="flame"></span></div>
+        </div>
+        <div class="layer top"></div>
+        <div class="layer mid"></div>
+        <div class="layer base"></div>
+        <div class="plate"></div>
+      </div>
+      <p class="cake-hint" id="cakeHint">Tap the candles to blow them out! 💨</p>
+    </section>
+
+    <!-- Controls -->
+    <section class="controls">
+      <button class="btn btn-primary" id="celebrateBtn">🎉 Celebrate</button>
+      <button class="btn btn-ghost" id="soundBtn" aria-pressed="false">🔊 Music</button>
+    </section>
+
+    <footer class="foot">
+      Made with💜 by your cousin — tap anywhere for confetti
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
